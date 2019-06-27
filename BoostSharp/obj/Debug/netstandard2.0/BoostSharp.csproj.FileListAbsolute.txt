@@ -2,7 +2,6 @@
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/bin/Debug/netstandard2.0/BoostSharp.dll
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/bin/Debug/netstandard2.0/ref/BoostSharp.dll
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/bin/Debug/netstandard2.0/BoostSharp.pdb
-/Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/obj/Debug/netstandard2.0/BoostSharp.csprojAssemblyReference.cache
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/obj/Debug/netstandard2.0/BoostSharp.csproj.CoreCompileInputs.cache
@@ -12,3 +11,4 @@
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/obj/Debug/netstandard2.0/BoostSharp.dll
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/obj/Debug/netstandard2.0/ref/BoostSharp.dll
 /Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/obj/Debug/netstandard2.0/BoostSharp.pdb
+/Users/dawidkacprzak/Desktop/BoostSharp/BoostSharp/obj/Debug/netstandard2.0/BoostSharp.csprojAssemblyReference.cache
