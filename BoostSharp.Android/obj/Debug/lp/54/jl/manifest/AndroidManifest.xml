@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.microsoft.identity.common" android:versionCode="1" android:versionName="0.0.10-alpha">
-  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27" />
-  <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application>
-    <activity android:name="com.microsoft.identity.common.internal.providers.oauth2.AuthorizationActivity" android:configChanges="orientation|keyboardHidden|screenSize" />
-  </application>
-</manifest>

@@ -46,19 +46,7 @@
 			<string>pl.oyacode.boostsharp</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>msalfeb09ce2-4c16-4987-b14c-5de5a9176d81
-</string>
-			</array>
-			<key>CFBundleURLTypes</key>
-			<string>Editor</string>
-		</dict>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string>msauth.pl.oyacode.boostsharp</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>msalfeb09ce2-4c16-4987-b14c-5de5a9176d81
-</string>
+				<string>msalfeb09ce2-4c16-4987-b14c-5de5a9176d81</string>
 			</array>
 			<key>CFBundleURLTypes</key>
 			<string>Editor</string>
