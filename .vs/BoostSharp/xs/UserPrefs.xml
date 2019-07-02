@@ -1,29 +1,24 @@
 ﻿<Properties StartupConfiguration="{2865151D-3DD4-492C-B26B-A13D7C2BDDC0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BoostSharp.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BoostSharp/App.xaml.cs">
     <Files>
+      <File FileName="BoostSharp/MainPage.xaml.cs" Line="1" Column="1" />
       <File FileName="BoostSharp/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="BoostSharp/MainPage.xaml.cs" Line="23" Column="34" />
-      <File FileName="BoostSharp/MainPage.xaml" Line="5" Column="66" />
-      <File FileName="BoostSharp/App.xaml" Line="1" Column="1" />
-      <File FileName="BoostSharp/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="BoostSharp.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="BoostSharp.iOS/Main.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BoostSharp" expanded="True">
             <Node name="BoostSharp" expanded="True">
-              <Node name="App.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
             <Node name="BoostSharp.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-              </Node>
+              <Node name="Packages" expanded="True" />
             </Node>
             <Node name="BoostSharp.iOS" expanded="True">
-              <Node name="Main.cs" selected="True" />
+              <Node name="Resources" expanded="True" />
             </Node>
           </Node>
         </State>
