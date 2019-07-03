@@ -21,9 +21,10 @@ namespace BoostSharp
             Auth.SignOut();
         }
 
-        async void Handle_Clicked(object sender, System.EventArgs e)
+        private void Handle_Clicked(object sender, System.EventArgs e)
         {
-            try
+            App.Current.MainPage = new HomePage();
+            /*try
             { 
                 // Sign-in succeeded, UserInformation is not null.
                 UserInformation userInfo = await Auth.SignInAsync();
@@ -34,7 +35,7 @@ namespace BoostSharp
             catch (Exception ex)
             {
                 // Do something with sign-in failure.
-            }
+            } */
         }
 
 
