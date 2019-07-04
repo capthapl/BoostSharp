@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms"
+             x:Class="BoostSharp.Pages.ProfilePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Nickname" FontSize="18" HorizontalOptions="Center"></Label>
+                <Label Text="5 opinii" FontSize="15" HorizontalOptions="Center" TextColor="#545454"></Label>
+            </StackLayout>
+
+            <StackLayout Padding="20,10,20,10">
+                <material:MaterialButton HeightRequest="40" Text="Zobacz wszystkie opinie" FontSize="14" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+            </StackLayout>
+
+            <StackLayout Padding="10,5,10,10">
+                <Label Text="Ocena profilu: Tibia" FontSize="15"></Label>
+            </StackLayout>
+
+            <StackLayout Padding="20,10,20,10">
+                <material:MaterialButton HeightRequest="40" Text="Wystaw opinie" FontSize="14" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+            </StackLayout>
+
+            <StackLayout Padding="10,5,0,5">
+                <Label Text="Usługi" FontSize="15"></Label>
+                <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,0,0">
+                    <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                    <StackLayout Padding="10,0,0,0" VerticalOptions="Center">
+                        <Label Text="Elo Boosting" FontSize="13"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,0,0">
+                    <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                    <StackLayout Padding="10,0,0,0" VerticalOptions="Center">
+                        <Label Text="MMR Boosting" FontSize="13"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Padding="10,5,0,5">
+                <Label Text="Kontakt" FontSize="15"></Label>
+                <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,0,0">
+                    <Image Source="email_logo" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                    <StackLayout Padding="10,0,0,0">
+                        <Label Text="Email" FontSize="13"></Label>
+                        <Label Text="dawidkacprzak@icloud.com" FontSize="13" TextColor="#545454"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <BoxView Margin="50,2,0,2" BackgroundColor="#F1F1F1" HeightRequest="2" HorizontalOptions="FillAndExpand"></BoxView>
+                <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,0,0">
+                    <Image Source="facebook_logo" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                    <StackLayout Padding="10,0,0,0">
+                        <Label Text="Facebook" FontSize="13"></Label>
+                        <Label Text="https://facebook.com/nickname" FontSize="13" TextColor="#545454"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Padding="20,10,20,10">
+                <material:MaterialButton HeightRequest="40" Text="Wyloguj się" FontSize="14" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
