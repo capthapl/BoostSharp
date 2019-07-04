@@ -19,12 +19,18 @@
     <PackageReference Include="XF.Material" Version="1.4.1.3" />
     <PackageReference Include="FreshMvvm" Version="3.0.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="3.0.1" />
+    <PackageReference Include="MaterialKit.Chips" Version="0.9.0" />
+    <PackageReference Include="Fody" Version="5.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="CustomControls\" />
     <Folder Include="PageModels\" />
     <Folder Include="Pages\" />
+    <Folder Include="CustomControls\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Pages\MainPage.cs" />
