@@ -4,13 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              mc:Ignorable="d" 
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms"
              x:Class="BoostSharp.MainPage">
     <Grid>
         <Image Source="loginbackground" Aspect="AspectFill"/>
         <Image Source="logo" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="225" WidthRequest="185"/>
         <Grid VerticalOptions="EndAndExpand" Padding="30,0,30,30">
             <StackLayout>
-                <Button HeightRequest="50" Text="Kliknij by kontynuować" BackgroundColor="#53CBFF" TextColor="#FFF" CornerRadius="20" Clicked="Handle_Clicked"></Button>
+                <material:MaterialButton Padding="0,15,0,15" Text="Kliknij aby kontynuować" BackgroundColor="#53CBFF" AllCaps="false" TextColor="#FFF" CornerRadius="20" Clicked="Handle_Clicked"/>
                 <Label Text="Logowanie i rejestracja jest równoważna z akceptacją warunków użytkowania" HorizontalTextAlignment="Center" TextColor="#FFF" FontSize="12" Margin="0,20,0,0"></Label>
             </StackLayout>
         </Grid>
