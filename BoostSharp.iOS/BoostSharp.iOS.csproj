@@ -73,6 +73,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\close.imageset\close.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\close.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\logo.imageset\logo.png">
       <Visible>false</Visible>
     </ImageAsset>
@@ -178,10 +184,10 @@
       <Name>BoostSharp</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Folder Include="CustomRenderer\" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BundleResource Include="Resources\Roboto-Bold.ttf" />
     <BundleResource Include="Resources\Roboto-Medium.ttf" />
