@@ -34,8 +34,8 @@ namespace BoostSharp.CustomControls
 
         public Chip()
         {
-            ChipViewModel = new ChipViewModel();
             InitializeComponent();
+            ChipViewModel = new ChipViewModel();
             BindingContext = ChipViewModel;
         }
     }

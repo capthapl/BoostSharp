@@ -40,4 +40,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CustomControls\BoosterCard.xaml.cs">
+      <DependentUpon>BoosterCard.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
