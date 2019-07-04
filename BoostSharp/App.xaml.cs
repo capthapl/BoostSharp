@@ -5,6 +5,7 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Auth;
 using Microsoft.AppCenter;
+using BoostSharp.PageModels;
 
 namespace BoostSharp
 {
@@ -13,8 +14,10 @@ namespace BoostSharp
         public App()
         {
             InitializeComponent();
+            var defaultPage = FreshMvvm.FreshPageModelResolver.ResolvePageModel<MainPageModel>();
+            var navigationContainer = new FreshMvvm.FreshNavigationContainer(defaultPage);
 
-            MainPage = new MainPage();
+            MainPage = navigationContainer;
         }
 
         protected override void OnStart()
