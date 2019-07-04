@@ -5,6 +5,18 @@
             <Color x:Key="MainBlue">#49C1F5</Color>
             <Color x:Key="SoftBlue">#8BDCFF</Color>
             <Color x:Key="DarkBlue">#40AAD7</Color>
+            <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont">
+                <On Platform="Android" Value="Roboto-Regular.ttf#Roboto" />
+                <On Platform="iOS" Value="Roboto-Regular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont">
+                <On Platform="Android" Value="Roboto-Bold.ttf#Roboto" />
+                <On Platform="iOS" Value="Roboto-Bold" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="MediumFont">
+                <On Platform="Android" Value="Roboto-Medium.ttf#Roboto" />
+                <On Platform="iOS" Value="Roboto-Medium" />
+            </OnPlatform>            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
