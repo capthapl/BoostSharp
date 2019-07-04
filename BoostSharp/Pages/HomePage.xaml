@@ -5,11 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms"
-             x:Class="BoostSharp.Pages.HomePage">
+             x:Class="BoostSharp.Pages.HomePage"
+             NavigationPage.HasNavigationBar="false">
     <StackLayout>
         <StackLayout HeightRequest="110" >
             <StackLayout Orientation="Horizontal" Padding="20,10,20,0">
-                <BoxView WidthRequest="50" HeightRequest="50" CornerRadius="25" BackgroundColor="Red"/>
+                <Frame WidthRequest="50" HeightRequest="50" CornerRadius="25" Margin="0" Padding="0" IsClippedToBounds="True">
+                    <Image Aspect="AspectFill" Source="https://pixel.nymag.com/imgs/daily/vulture/2018/11/02/02-avatar-2.w700.h700.jpg" />
+                </Frame>
                 <Entry HeightRequest="50" Placeholder="Kogo szukasz?" HorizontalOptions="FillAndExpand" TextColor="#49C1F5" PlaceholderColor="#49C1F5"></Entry>
                 <Image Source="search" WidthRequest="25" HeightRequest="25"></Image>
                 <Image Source="filter" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0"></Image>
