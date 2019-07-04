@@ -22,11 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="HomePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <Folder Include="CustomControls\" />
+    <Folder Include="PageModels\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CustomControls\" />
+    <Compile Remove="Pages\MainPage.cs" />
   </ItemGroup>
 </Project>
