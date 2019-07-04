@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms"
              x:Class="BoostSharp.Pages.HomePage"
+             xmlns:custom="clr-namespace:BoostSharp.CustomControls"
              NavigationPage.HasNavigationBar="false">
     <StackLayout>
         <StackLayout HeightRequest="110" >
@@ -30,6 +31,7 @@
             <Label Text="ListView normalnie siu siu"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"/>
+            <custom:BoosterCard ImageSource="https://st2.depositphotos.com/1814084/5304/i/950/depositphotos_53043065-stock-photo-lexi-belle.jpg"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>

@@ -5,6 +5,8 @@
             <Color x:Key="MainBlue">#49C1F5</Color>
             <Color x:Key="SoftBlue">#8BDCFF</Color>
             <Color x:Key="DarkBlue">#40AAD7</Color>
+            <Color x:Key="LightGray">#FAFAFA</Color>
+            <Color x:Key="DarkGray">#545454</Color>
             <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont">
                 <On Platform="Android" Value="Roboto-Regular.ttf#Roboto" />
                 <On Platform="iOS" Value="Roboto-Regular" />
