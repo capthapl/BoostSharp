@@ -16,7 +16,9 @@
             <OnPlatform x:TypeArguments="x:String" x:Key="MediumFont">
                 <On Platform="Android" Value="Roboto-Medium.ttf#Roboto" />
                 <On Platform="iOS" Value="Roboto-Medium" />
-            </OnPlatform>            
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:Double" x:Key="Small" Android="13" iOS="13"/>
+            <OnPlatform x:TypeArguments="x:Double" x:Key="Regular" Android="15" iOS="15"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
