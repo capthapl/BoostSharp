@@ -100,11 +100,11 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CustomRenderer\" />
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="CustomRenderer\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BoostSharp\BoostSharp.csproj">
@@ -120,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tick.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
