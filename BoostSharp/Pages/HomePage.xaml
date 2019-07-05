@@ -12,17 +12,11 @@
         <StackLayout HeightRequest="110" >
             <StackLayout Orientation="Horizontal" Padding="20,10,20,0">
                 <Frame WidthRequest="50" HeightRequest="50" CornerRadius="25" Margin="0" Padding="0" IsClippedToBounds="True">
-                    <Image Aspect="AspectFill" Source="https://www.spyshop.pl/admin_blog/img/prestashop-avatar.png">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Command="{Binding OpenProfilePage}"
-                                NumberOfTapsRequired="1" /> 
-                        </Image.GestureRecognizers>
-                    </Image>
+                    <ImageButton BackgroundColor="Transparent" Aspect="AspectFill" Source="https://www.spyshop.pl/admin_blog/img/prestashop-avatar.png" Command="{Binding OpenProfilePage}"></ImageButton>
                 </Frame>
                 <Entry HeightRequest="50" Placeholder="Kogo szukasz?" HorizontalOptions="FillAndExpand" TextColor="#49C1F5" PlaceholderColor="#49C1F5" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}"></Entry>
-                <Image Source="search" WidthRequest="25" HeightRequest="25"></Image>
-                <Image Source="filter" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0"></Image>
+                <ImageButton Source="search" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25"></ImageButton>
+                <ImageButton Source="filter" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0" Clicked="OpenCloseFilter"></ImageButton>
             </StackLayout>
             <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                 <StackLayout Orientation="Horizontal" Margin="0,10,0,0" Padding="20,0,20,0" HorizontalOptions="Center">
@@ -34,24 +28,25 @@
             </ScrollView>
         </StackLayout>
 
-        <StackLayout Padding="20,5,20,5">
-            <Label Text="Ilość opinii" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=MediumFont}"></Label>
-            <StackLayout>
-                <material:MaterialSlider Value="{Binding CurrentValue}" MinValue="0" MaxValue="50" />
+        <StackLayout IsVisible="False" x:Name="_filter">
+            <custom:Section Title="Ilość opinii">
+                <StackLayout Padding="10,0,10,0">
+                    <material:MaterialSlider Value="{Binding CurrentValue}" MinValue="0" MaxValue="50" />
+                </StackLayout>
+            </custom:Section>
+            <custom:Section Title="Sortuj po">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <material:MaterialButton HeightRequest="40" Text="Najnowszych" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                    <material:MaterialButton HeightRequest="40" Text="Najlepszych" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Margin="20,0,0,0"/>
+                </StackLayout>
+            </custom:Section>
+            <StackLayout Padding="20,10,20,10">
+                <material:MaterialButton HeightRequest="40" Text="Filtruj" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                <material:MaterialButton HeightRequest="40" Text="Zamknij" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Clicked="OpenCloseFilter"/>
             </StackLayout>
-        </StackLayout>
-        <custom:Section Title="Sortuj po">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <material:MaterialButton HeightRequest="40" Text="Najnowszych" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
-                <material:MaterialButton HeightRequest="40" Text="Najlepszych" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Margin="20,0,0,0"/>
-            </StackLayout>
-        </custom:Section>
-        <StackLayout Padding="20,10,20,10">
-            <material:MaterialButton HeightRequest="40" Text="Filtruj" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
-            <material:MaterialButton HeightRequest="40" Text="Zamknij" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
         </StackLayout>
 
-        <StackLayout Padding="40,0,40,0" Margin="0,20,0,0">
+        <StackLayout  IsVisible="True" Padding="40,0,40,0" Margin="0,20,0,0" x:Name="_boosters">
             <custom:BoosterCard ImageSource="https://st2.depositphotos.com/1814084/5304/i/950/depositphotos_53043065-stock-photo-lexi-belle.jpg"/>
         </StackLayout>
     </StackLayout>
