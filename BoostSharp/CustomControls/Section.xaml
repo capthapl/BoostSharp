@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BoostSharp.CustomControls.Section">
+    <ContentView.Content>
+        <StackLayout Spacing="0">
+            <BoxView BackgroundColor="{StaticResource Key=SectionGray}" HeightRequest="5"/>
+            <Label Margin="15,5,0,10" Text="{Binding Title}" TextColor="{StaticResource Key=BlackTextColor}" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=MediumFont}"></Label>
+            <StackLayout x:Name="content"></StackLayout>
+            <BoxView BackgroundColor="{StaticResource Key=SectionGray}" HeightRequest="5" Margin="0,5,0,0"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

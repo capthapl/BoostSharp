@@ -7,6 +7,8 @@
             <Color x:Key="DarkBlue">#40AAD7</Color>
             <Color x:Key="LightGray">#FAFAFA</Color>
             <Color x:Key="DarkGray">#545454</Color>
+            <Color x:Key="SectionGray">#F1F1F1</Color>
+            <Color x:Key="BlackTextColor">#1A1A1A</Color>
             <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont">
                 <On Platform="Android" Value="Roboto-Regular.ttf#Roboto" />
                 <On Platform="iOS" Value="Roboto-Regular" />
