@@ -179,10 +179,18 @@
     <ImageAsset Include="Assets.xcassets\mmrboostingicon.imageset\mmrboostingicon.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\navigationgradient.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\navigationgradient.imageset\navigationgradient.png" />
-    <ImageAsset Include="Assets.xcassets\backarrow.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\backarrow.imageset\backarrow.png" />
+    <ImageAsset Include="Assets.xcassets\navigationgradient.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\navigationgradient.imageset\navigationgradient.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\backarrow.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\backarrow.imageset\backarrow.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
