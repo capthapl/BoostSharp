@@ -98,6 +98,10 @@
       <Generator>
       </Generator>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\coachingicon.png" />
+    <AndroidResource Include="Resources\drawable\eloboostingicon.png" />
+    <AndroidResource Include="Resources\drawable\mmrboostingicon.png" />
+    <AndroidResource Include="Resources\drawable\moreicon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderer\" />

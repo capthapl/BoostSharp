@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -21,7 +22,7 @@ namespace BoostSharp.CustomControls.ViewModels
         public ICommand TapContainer { get; set; }
 
         public string Text { get; set; }
-        
+
         public ChipViewModel()
         {
             TapContainer = new Command(()=>
