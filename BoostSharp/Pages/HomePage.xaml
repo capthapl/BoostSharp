@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms" x:Class="BoostSharp.Pages.HomePage" xmlns:custom="clr-namespace:BoostSharp.CustomControls" NavigationPage.HasNavigationBar="false">
     <StackLayout BackgroundColor="{StaticResource Key=Void}">
-        <material:MaterialCard Padding="5" CornerRadius="0" HasShadow="true">
+        <material:MaterialCard Padding="5" HasShadow="true" CornerRadius="0">
             <StackLayout HeightRequest="110">
                 <StackLayout Orientation="Horizontal" Padding="20,10,20,0">
                     <Frame WidthRequest="50" HeightRequest="50" CornerRadius="25" Margin="0" Padding="0" IsClippedToBounds="True">
