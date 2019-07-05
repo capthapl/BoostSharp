@@ -143,6 +143,8 @@
     <ImageAsset Include="Assets.xcassets\loginbackground.imageset\loginbackground-1.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ratinggradient.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ratinggradient.imageset\ratinggradient.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -181,6 +183,7 @@
   <ItemGroup />
   <ItemGroup>
     <Folder Include="CustomRenderer\" />
+    <Folder Include="Assets.xcassets\ratinggradient.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Roboto-Bold.ttf" />
