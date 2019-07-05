@@ -14,7 +14,7 @@ namespace BoostSharp
         public App()
         {
             InitializeComponent();
-            var defaultPage = FreshMvvm.FreshPageModelResolver.ResolvePageModel<MainPageModel>();
+            var defaultPage = FreshMvvm.FreshPageModelResolver.ResolvePageModel<ReviewsPageModel>();
             var navigationContainer = new FreshMvvm.FreshNavigationContainer(defaultPage);
             MainPage = navigationContainer;
         }

@@ -30,8 +30,8 @@
 
         <StackLayout IsVisible="False" x:Name="_filter">
             <custom:Section Title="Ilość opinii">
-                <StackLayout Padding="10,0,10,0">
-                    <material:MaterialSlider Value="{Binding CurrentValue}" MinValue="0" MaxValue="50" />
+                <StackLayout Padding="0,0,10,0">
+                    <material:MaterialSlider Value="{Binding CurrentValue}" MinValue="0" MaxValue="50" Padding="-5,0,0,0"/>
                 </StackLayout>
             </custom:Section>
             <custom:Section Title="Sortuj po">

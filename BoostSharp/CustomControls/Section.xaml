@@ -3,7 +3,7 @@
     <ContentView.Content>
         <StackLayout Spacing="0">
             <Label Margin="15,5,0,10" Text="{Binding Title}" TextColor="{StaticResource Key=BlackTextColor}" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=MediumFont}"></Label>
-            <StackLayout x:Name="content" Padding="0,0,0,5"></StackLayout>
+            <StackLayout x:Name="content" Padding="20,0,0,5"></StackLayout>
             <BoxView BackgroundColor="{StaticResource Key=SectionGray}" HeightRequest="5"/>
         </StackLayout>
     </ContentView.Content>

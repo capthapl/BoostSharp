@@ -6,74 +6,86 @@
              mc:Ignorable="d"
              xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms"
              xmlns:custom="clr-namespace:BoostSharp.CustomControls"
-             x:Class="BoostSharp.Pages.EditProfilePage">
+             x:Class="BoostSharp.Pages.EditProfilePage"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout>
-                <Label Text="Zmień zdjęcie" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" HorizontalOptions="Center" TextColor="#545454"></Label>
-            </StackLayout>
-
-            <StackLayout Padding="10,5,10,10">
-                <Label Text="Dane podstawowe" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=MediumFont}"></Label>
-            </StackLayout>
-
-            <StackLayout Padding="10,5,0,5">
-                <Label Text="Usługi" FontSize="15"></Label>
-                <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
-                    <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                    <StackLayout Padding="10,0,0,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                        <Label Text="Elo Boosting" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Image Source="navigationgradient" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Aspect="Fill" />
+                <ImageButton Command="{Binding PopCommand}" BackgroundColor="Transparent"  Margin="20" HorizontalOptions="Start" VerticalOptions="Center" Source="backarrow"/>
+            </Grid>
+            <ScrollView Grid.Row="1">
+                <StackLayout>
+                    <Frame HasShadow="false" CornerRadius="58" WidthRequest="115" HeightRequest="115" VerticalOptions="Start" HorizontalOptions="Center"  Margin="0" Padding="0"  IsClippedToBounds="True">
+                        <Image Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="115" HeightRequest="115" Source="https://i1.sndcdn.com/artworks-000442903056-u5d363-t500x500.jpg"/>
+                    </Frame>
+                    <StackLayout>
+                        <Label Text="Zmień zdjęcie" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" HorizontalOptions="Center" TextColor="#545454"></Label>
                     </StackLayout>
-                    <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                </StackLayout>
-                <BoxView Margin="50,2,0,2" BackgroundColor="#F1F1F1" HeightRequest="2" HorizontalOptions="FillAndExpand"></BoxView>
-                <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
-                    <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                    <StackLayout Padding="10,0,0,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                        <Label Text="MMR Boosting" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
+
+                    <custom:Section Title="Dane podstawowe">
+                    </custom:Section>
+
+                    <custom:Section Title="Usługi">
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
+                            <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                            <StackLayout Padding="10,0,0,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                <Label Text="Elo Boosting" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
+                            </StackLayout>
+                            <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                        </StackLayout>
+                        <BoxView Margin="50,2,0,2" BackgroundColor="#F1F1F1" HeightRequest="2" HorizontalOptions="FillAndExpand"></BoxView>
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
+                            <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                            <StackLayout Padding="10,0,0,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                <Label Text="MMR Boosting" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
+                            </StackLayout>
+                            <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                        </StackLayout>
+                        <StackLayout Padding="0,10,20,10">
+                            <material:MaterialButton HeightRequest="40" Text="Dodaj usługę" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                        </StackLayout>
+                    </custom:Section>
+
+                    <custom:Section Title="Kontakt">
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
+                            <Image Source="email_logo" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                            <StackLayout Padding="10,0,0,0" HorizontalOptions="FillAndExpand">
+                                <Label Text="Email" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
+                                <Label Text="dawidkacprzak@icloud.com" FontSize="13" TextColor="#545454"></Label>
+                            </StackLayout>
+                            <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                        </StackLayout>
+                        <BoxView Margin="50,2,0,2" BackgroundColor="#F1F1F1" HeightRequest="2" HorizontalOptions="FillAndExpand"></BoxView>
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
+                            <Image Source="facebook_logo" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                            <StackLayout Padding="10,0,0,0" HorizontalOptions="FillAndExpand">
+                                <Label Text="Facebook" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
+                                <Label Text="https://facebook.com/nickname" FontSize="13" TextColor="#545454"></Label>
+                            </StackLayout>
+                            <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                        </StackLayout>
+                        <StackLayout Padding="0,10,20,10">
+                            <material:MaterialButton HeightRequest="40" Text="Dodaj kontakt" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                        </StackLayout>
+                    </custom:Section>
+
+                    <custom:Section Title="Konto">
+                        <StackLayout Padding="0,10,20,10">
+                            <material:MaterialButton HeightRequest="40" Text="Wróć do trybu użyszkodnika" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                        </StackLayout>
+                    </custom:Section>
+
+                    <StackLayout Padding="20,10,20,10">
+                        <material:MaterialButton HeightRequest="40" Text="Zapisz zmiany" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
                     </StackLayout>
-                    <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                </StackLayout>
-                <StackLayout Padding="10,10,20,10">
-                    <material:MaterialButton HeightRequest="40" Text="Dodaj usługę" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
-                </StackLayout>
-            </StackLayout>
 
-            <StackLayout Padding="10,5,0,5">
-                <Label Text="Kontakt" FontSize="15"></Label>
-                <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
-                    <Image Source="email_logo" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                    <StackLayout Padding="10,0,0,0" HorizontalOptions="FillAndExpand">
-                        <Label Text="Email" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
-                        <Label Text="dawidkacprzak@icloud.com" FontSize="13" TextColor="#545454"></Label>
-                    </StackLayout>
-                    <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
                 </StackLayout>
-                <BoxView Margin="50,2,0,2" BackgroundColor="#F1F1F1" HeightRequest="2" HorizontalOptions="FillAndExpand"></BoxView>
-                <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
-                    <Image Source="facebook_logo" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                    <StackLayout Padding="10,0,0,0" HorizontalOptions="FillAndExpand">
-                        <Label Text="Facebook" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
-                        <Label Text="https://facebook.com/nickname" FontSize="13" TextColor="#545454"></Label>
-                    </StackLayout>
-                    <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                </StackLayout>
-                <StackLayout Padding="10,10,20,10">
-                    <material:MaterialButton HeightRequest="40" Text="Dodaj kontakt" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
-                </StackLayout>
-            </StackLayout>
-
-            <StackLayout Padding="10,5,0,5">
-                <Label Text="Konto" FontSize="15"></Label>
-                <StackLayout Padding="10,10,20,10">
-                    <material:MaterialButton HeightRequest="40" Text="Wróć do trybu użyszkodnika" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
-                </StackLayout>
-            </StackLayout>
-
-            <StackLayout Padding="20,10,20,10">
-                <material:MaterialButton HeightRequest="40" Text="Zapisz zmiany" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
-            </StackLayout>
-
-        </StackLayout>
+            </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
