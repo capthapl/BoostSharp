@@ -1,17 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BoostSharp.CustomControls.BoosterCard" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms" HorizontalOptions="Start" VerticalOptions="Start">
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:custom="clr-namespace:BoostSharp.CustomControls" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BoostSharp.CustomControls.BoosterCard" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms" HorizontalOptions="Start" VerticalOptions="Start">
     <ContentView.Content>
         <Frame HorizontalOptions="Start" CornerRadius="5" HasShadow="false" VerticalOptions="Start" Padding="0,0,0,5" IsClippedToBounds="true">
             <StackLayout BackgroundColor="White" Padding="0" VerticalOptions="Start" Spacing="0" HorizontalOptions="Start" WidthRequest="120">
                 <Image Source="{Binding ImageSource}" HeightRequest="120" Aspect="AspectFill" BackgroundColor="Gray" />
                 <StackLayout Padding="0,5,0,0" BackgroundColor="{StaticResource LightGray}">
-                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="20" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Key=DarkGray}" FontFamily="{StaticResource Key=RegularFont}" Text="Placeholder" />
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Key=DarkGray}" FontFamily="{StaticResource Key=RegularFont}" Text="Placeholder" />
                 </StackLayout>
-                <StackLayout Padding="0,5,0,0" Orientation="Horizontal" VerticalOptions="Center">
-                    <Image Source="http://www.clker.com/cliparts/X/2/y/E/p/t/gray-heart-md.png" HeightRequest="20" WidthRequest="20" HorizontalOptions="CenterAndExpand" />
-                    <Image Source="http://www.clker.com/cliparts/X/2/y/E/p/t/gray-heart-md.png" HeightRequest="20" WidthRequest="20" HorizontalOptions="CenterAndExpand" />
-                    <Image Source="http://www.clker.com/cliparts/X/2/y/E/p/t/gray-heart-md.png" HeightRequest="20" WidthRequest="20" HorizontalOptions="CenterAndExpand" />
-                </StackLayout>
+                <StackLayout x:Name="_icons" Spacing="15" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center"/>
             </StackLayout>
         </Frame>
     </ContentView.Content>

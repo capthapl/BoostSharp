@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using BoostSharp.Universal;
 using Xamarin.Forms;
 
 namespace BoostSharp.CustomControls.ViewModels

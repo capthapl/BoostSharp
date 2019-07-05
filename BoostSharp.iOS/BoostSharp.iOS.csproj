@@ -143,6 +143,14 @@
     <ImageAsset Include="Assets.xcassets\loginbackground.imageset\loginbackground-1.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\moreicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\eloboostingicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coachingicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\mmrboostingicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\moreicon.imageset\moreicon.png" />
+    <ImageAsset Include="Assets.xcassets\eloboostingicon.imageset\eloboostingicon.png" />
+    <ImageAsset Include="Assets.xcassets\coachingicon.imageset\coachingicon.png" />
+    <ImageAsset Include="Assets.xcassets\mmrboostingicon.imageset\mmrboostingicon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -181,6 +189,10 @@
   <ItemGroup />
   <ItemGroup>
     <Folder Include="CustomRenderer\" />
+    <Folder Include="Assets.xcassets\moreicon.imageset\" />
+    <Folder Include="Assets.xcassets\eloboostingicon.imageset\" />
+    <Folder Include="Assets.xcassets\coachingicon.imageset\" />
+    <Folder Include="Assets.xcassets\mmrboostingicon.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Roboto-Bold.ttf" />
