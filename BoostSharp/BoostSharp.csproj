@@ -31,9 +31,12 @@
     <Folder Include="PageModels\" />
     <Folder Include="Pages\" />
     <Folder Include="CustomControls\ViewModels\" />
+    <Folder Include="Universal\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Pages\MainPage.cs" />
+    <Compile Remove="CustomControls\BindableStackLayout.cs" />
+    <Compile Remove="CustomControls\BindableStackLayout.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Pages\ProfilePage.xaml">
