@@ -23,6 +23,7 @@ namespace BoostSharp.CustomControls.ViewModels
 
         public string Text { get; set; }
 
+        
         public ChipViewModel()
         {
             TapContainer = new Command(()=>
