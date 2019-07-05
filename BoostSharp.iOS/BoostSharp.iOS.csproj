@@ -179,6 +179,10 @@
     <ImageAsset Include="Assets.xcassets\mmrboostingicon.imageset\mmrboostingicon.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\navigationgradient.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\navigationgradient.imageset\navigationgradient.png" />
+    <ImageAsset Include="Assets.xcassets\backarrow.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\backarrow.imageset\backarrow.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -222,6 +226,8 @@
     <Folder Include="Assets.xcassets\eloboostingicon.imageset\" />
     <Folder Include="Assets.xcassets\coachingicon.imageset\" />
     <Folder Include="Assets.xcassets\mmrboostingicon.imageset\" />
+    <Folder Include="Assets.xcassets\navigationgradient.imageset\" />
+    <Folder Include="Assets.xcassets\backarrow.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderer\" />

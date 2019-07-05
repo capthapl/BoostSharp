@@ -15,6 +15,7 @@ namespace BoostSharp.Pages
         public ProfilePage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

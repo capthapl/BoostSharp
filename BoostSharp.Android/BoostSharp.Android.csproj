@@ -103,6 +103,8 @@
     <AndroidResource Include="Resources\drawable\eloboostingicon.png" />
     <AndroidResource Include="Resources\drawable\mmrboostingicon.png" />
     <AndroidResource Include="Resources\drawable\moreicon.png" />
+    <AndroidResource Include="Resources\drawable\navigationgradient.png" />
+    <AndroidResource Include="Resources\drawable\backarrow.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderer\" />
