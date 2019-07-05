@@ -98,6 +98,7 @@
       <Generator>
       </Generator>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ratinggradient.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderer\" />
