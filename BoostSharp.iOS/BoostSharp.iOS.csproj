@@ -149,16 +149,36 @@
     <ImageAsset Include="Assets.xcassets\loginbackground.imageset\loginbackground-1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ratinggradient.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\ratinggradient.imageset\ratinggradient.png" />
-    <ImageAsset Include="Assets.xcassets\moreicon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\eloboostingicon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\coachingicon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\mmrboostingicon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\moreicon.imageset\moreicon.png" />
-    <ImageAsset Include="Assets.xcassets\eloboostingicon.imageset\eloboostingicon.png" />
-    <ImageAsset Include="Assets.xcassets\coachingicon.imageset\coachingicon.png" />
-    <ImageAsset Include="Assets.xcassets\mmrboostingicon.imageset\mmrboostingicon.png" />
+    <ImageAsset Include="Assets.xcassets\ratinggradient.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ratinggradient.imageset\ratinggradient.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\moreicon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eloboostingicon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\coachingicon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mmrboostingicon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\moreicon.imageset\moreicon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eloboostingicon.imageset\eloboostingicon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\coachingicon.imageset\coachingicon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mmrboostingicon.imageset\mmrboostingicon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

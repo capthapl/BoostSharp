@@ -9,12 +9,12 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-                <Label Text="Nickname" FontSize="18" HorizontalOptions="Center"></Label>
-                <Label Text="5 opinii" FontSize="15" HorizontalOptions="Center" TextColor="#545454"></Label>
+                <Label Text="Nickname" FontSize="15" FontFamily="{StaticResource Key=MediumFont}" HorizontalOptions="Center"></Label>
+                <Label Text="5 opinii" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" HorizontalOptions="Center" TextColor="#545454"></Label>
             </StackLayout>
 
             <StackLayout Padding="20,10,20,10">
-                <material:MaterialButton HeightRequest="40" Text="Zobacz wszystkie opinie" FontSize="14" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                <material:MaterialButton HeightRequest="40" Text="Zobacz wszystkie opinie" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
             </StackLayout>
 
             <StackLayout Padding="10,5,10,10">
@@ -22,31 +22,31 @@
             </StackLayout>
 
             <StackLayout Padding="20,10,20,10">
-                <material:MaterialButton HeightRequest="40" Text="Wystaw opinie" FontSize="14" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                <material:MaterialButton HeightRequest="40" Text="Wystaw opinie" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
             </StackLayout>
 
             <StackLayout Padding="10,5,0,5">
-                <Label Text="Usługi" FontSize="15"></Label>
+                <Label Text="Usługi" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=MediumFont}"></Label>
                 <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,0,0">
                     <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
                     <StackLayout Padding="10,0,0,0" VerticalOptions="Center">
-                        <Label Text="Elo Boosting" FontSize="13"></Label>
+                        <Label Text="Elo Boosting" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,0,0">
                     <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
                     <StackLayout Padding="10,0,0,0" VerticalOptions="Center">
-                        <Label Text="MMR Boosting" FontSize="13"></Label>
+                        <Label Text="MMR Boosting" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
 
             <StackLayout Padding="10,5,0,5">
-                <Label Text="Kontakt" FontSize="15"></Label>
+                <Label Text="Kontakt" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=MediumFont}"></Label>
                 <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,0,0">
                     <Image Source="email_logo" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
                     <StackLayout Padding="10,0,0,0">
-                        <Label Text="Email" FontSize="13"></Label>
+                                    <Label Text="Email" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
                         <Label Text="dawidkacprzak@icloud.com" FontSize="13" TextColor="#545454"></Label>
                     </StackLayout>
                 </StackLayout>
@@ -54,14 +54,14 @@
                 <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,0,0">
                     <Image Source="facebook_logo" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>
                     <StackLayout Padding="10,0,0,0">
-                        <Label Text="Facebook" FontSize="13"></Label>
+                                    <Label Text="Facebook" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
                         <Label Text="https://facebook.com/nickname" FontSize="13" TextColor="#545454"></Label>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
 
             <StackLayout Padding="20,10,20,10">
-                <material:MaterialButton HeightRequest="40" Text="Wyloguj się" FontSize="14" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                <material:MaterialButton HeightRequest="40" Text="Wyloguj się" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
             </StackLayout>
             
         </StackLayout>

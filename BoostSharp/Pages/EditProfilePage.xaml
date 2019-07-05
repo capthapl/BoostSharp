@@ -35,7 +35,7 @@
                     <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
                 </StackLayout>
                 <StackLayout Padding="10,10,20,10">
-                    <material:MaterialButton HeightRequest="40" Text="Dodaj usługę" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                    <material:MaterialButton HeightRequest="40" Text="Dodaj usługę" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
                 </StackLayout>
             </StackLayout>
 
@@ -59,19 +59,19 @@
                     <Image Source="close" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Center"></Image>
                 </StackLayout>
                 <StackLayout Padding="10,10,20,10">
-                    <material:MaterialButton HeightRequest="40" Text="Dodaj kontakt" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                    <material:MaterialButton HeightRequest="40" Text="Dodaj kontakt" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
                 </StackLayout>
             </StackLayout>
 
             <StackLayout Padding="10,5,0,5">
                 <Label Text="Konto" FontSize="15"></Label>
                 <StackLayout Padding="10,10,20,10">
-                    <material:MaterialButton HeightRequest="40" Text="Wróć do trybu użyszkodnika" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                    <material:MaterialButton HeightRequest="40" Text="Wróć do trybu użyszkodnika" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
                 </StackLayout>
             </StackLayout>
 
             <StackLayout Padding="20,10,20,10">
-                <material:MaterialButton HeightRequest="40" Text="Zapisz zmiany" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                <material:MaterialButton HeightRequest="40" Text="Zapisz zmiany" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
             </StackLayout>
 
         </StackLayout>
