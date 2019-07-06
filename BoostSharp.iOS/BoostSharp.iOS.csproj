@@ -197,6 +197,10 @@
     <ImageAsset Include="Assets.xcassets\facebook_logo.imageset\facebook_logo.png" />
     <ImageAsset Include="Assets.xcassets\email_logo.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\email_logo.imageset\email_logo.png" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\filter.png" />
+    <ImageAsset Include="Assets.xcassets\search.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\search.imageset\search.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -245,6 +249,8 @@
     <Folder Include="Assets.xcassets\boost.imageset\" />
     <Folder Include="Assets.xcassets\facebook_logo.imageset\" />
     <Folder Include="Assets.xcassets\email_logo.imageset\" />
+    <Folder Include="Assets.xcassets\filter.imageset\" />
+    <Folder Include="Assets.xcassets\search.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderer\" />

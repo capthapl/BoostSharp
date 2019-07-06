@@ -2,7 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms" x:Class="BoostSharp.Pages.HomePage" xmlns:custom="clr-namespace:BoostSharp.CustomControls" NavigationPage.HasNavigationBar="false">
     <StackLayout BackgroundColor="{StaticResource Key=Void}">
         <material:MaterialCard Padding="5" HasShadow="true" CornerRadius="0">
-            <StackLayout HeightRequest="110">
+            <material:MaterialCard.Padding>
+                <OnPlatform iOS="0,20,0,0"/>
+            </material:MaterialCard.Padding>
+            <StackLayout HeightRequest="115">
                 <StackLayout Orientation="Horizontal" Padding="20,10,20,0">
                     <Frame WidthRequest="50" HeightRequest="50" CornerRadius="25" Margin="0" Padding="0" IsClippedToBounds="True">
                         <Image Aspect="AspectFill" Source="https://www.spyshop.pl/admin_blog/img/prestashop-avatar.png">
@@ -12,8 +15,8 @@
                         </Image>
                     </Frame>
                     <Entry HeightRequest="50" Placeholder="Kogo szukasz?" HorizontalOptions="FillAndExpand" TextColor="#49C1F5" PlaceholderColor="#49C1F5" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}"></Entry>
-                    <Image Source="search" WidthRequest="25" HeightRequest="25"></Image>
-                    <Image Source="filter" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0"></Image>
+                <ImageButton Source="search" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25"/>
+                <ImageButton Source="filter" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0" Clicked="OpenCloseFilter" />
                 </StackLayout>
                 <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                     <StackLayout Orientation="Horizontal" Margin="0,10,0,0" Padding="20,0,20,0" HorizontalOptions="Center">
@@ -25,21 +28,6 @@
                 </ScrollView>
             </StackLayout>
         </material:MaterialCard>
-        <StackLayout Padding="20,5,20,5">
-            <Label Text="Ilość opinii" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=MediumFont}"></Label>
-            <StackLayout>
-                <material:MaterialSlider Value="{Binding CurrentValue}" MinValue="0" MaxValue="50" />
-            </StackLayout>
-            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
-                <StackLayout Orientation="Horizontal" Margin="0,10,0,0" Padding="20,0,20,0" HorizontalOptions="Center">
-                    <custom:Chip Text="Boosting"/>
-                    <custom:Chip Text="Coaching" Margin="5,0,0,0"/>
-                    <custom:Chip Text="MMR Boosting" Margin="5,0,0,0"/>
-                    <custom:Chip Text="Inne" Margin="5,0,0,0"/>
-                </StackLayout>
-            </ScrollView>
-        </StackLayout>
-
         <StackLayout IsVisible="False" x:Name="_filter">
             <custom:Section Title="Ilość opinii">
                 <StackLayout Padding="0,0,10,0">
