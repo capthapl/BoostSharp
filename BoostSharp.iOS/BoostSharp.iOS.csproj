@@ -191,6 +191,12 @@
     <ImageAsset Include="Assets.xcassets\backarrow.imageset\backarrow.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\boost.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\boost.imageset\boost.png" />
+    <ImageAsset Include="Assets.xcassets\facebook_logo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\facebook_logo.imageset\facebook_logo.png" />
+    <ImageAsset Include="Assets.xcassets\email_logo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\email_logo.imageset\email_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -236,6 +242,9 @@
     <Folder Include="Assets.xcassets\mmrboostingicon.imageset\" />
     <Folder Include="Assets.xcassets\navigationgradient.imageset\" />
     <Folder Include="Assets.xcassets\backarrow.imageset\" />
+    <Folder Include="Assets.xcassets\boost.imageset\" />
+    <Folder Include="Assets.xcassets\facebook_logo.imageset\" />
+    <Folder Include="Assets.xcassets\email_logo.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderer\" />
