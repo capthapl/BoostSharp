@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows.Input;
-using FreshMvvm;
 using Xamarin.Forms;
 
 namespace BoostSharp.PageModels
 {
-    class EditProfilePageModel : FreshBasePageModel
+    public class ReviewsPageModel : FreshMvvm.FreshBasePageModel
     {
         public ICommand PopCommand { get; set; }
-        public EditProfilePageModel()
+        public ReviewsPageModel()
         {
             PopCommand = new Command(async () =>
             {
