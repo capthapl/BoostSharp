@@ -15,8 +15,8 @@
                     <ImageButton BackgroundColor="Transparent" Aspect="AspectFill" Source="https://www.spyshop.pl/admin_blog/img/prestashop-avatar.png" Command="{Binding OpenProfilePage}"></ImageButton>
                 </Frame>
                 <Entry HeightRequest="50" Placeholder="Kogo szukasz?" HorizontalOptions="FillAndExpand" TextColor="#49C1F5" PlaceholderColor="#49C1F5" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}"></Entry>
-                <ImageButton Source="search" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25"></ImageButton>
-                <ImageButton Source="filter" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0" Clicked="OpenCloseFilter"></ImageButton>
+                <ImageButton Source="search" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25"/>
+                <ImageButton Source="filter" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0" Clicked="OpenCloseFilter" />
             </StackLayout>
             <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                 <StackLayout Orientation="Horizontal" Margin="0,10,0,0" Padding="20,0,20,0" HorizontalOptions="Center">
