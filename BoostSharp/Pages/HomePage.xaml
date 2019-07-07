@@ -1,53 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms" x:Class="BoostSharp.Pages.HomePage" xmlns:custom="clr-namespace:BoostSharp.CustomControls" NavigationPage.HasNavigationBar="false">
     <StackLayout BackgroundColor="{StaticResource Key=Void}">
-        <material:MaterialCard Padding="5" HasShadow="true" CornerRadius="0">
-            <material:MaterialCard.Padding>
-                <OnPlatform iOS="0,20,0,0"/>
-            </material:MaterialCard.Padding>
-            <StackLayout HeightRequest="115">
-                <StackLayout Orientation="Horizontal" Padding="20,10,20,0">
-                    <Frame WidthRequest="50" HeightRequest="50" CornerRadius="25" Margin="0" Padding="0" IsClippedToBounds="True">
-                        <Image Aspect="AspectFill" Source="https://www.spyshop.pl/admin_blog/img/prestashop-avatar.png">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding OpenProfilePage}" NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </Frame>
-                    <Entry HeightRequest="50" Placeholder="Kogo szukasz?" HorizontalOptions="FillAndExpand" TextColor="#49C1F5" PlaceholderColor="#49C1F5" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}"></Entry>
-                <ImageButton Source="search" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25"/>
-                <ImageButton Source="filter" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0" Clicked="OpenCloseFilter" />
-                </StackLayout>
-                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
-                    <StackLayout Orientation="Horizontal" Margin="0,10,0,0" Padding="20,0,20,0" HorizontalOptions="Center">
-                        <custom:Chip Text="Boosting" />
-                        <custom:Chip Text="Coaching" Margin="5,0,0,0" />
-                        <custom:Chip Text="MMR Boosting" Margin="5,0,0,0" />
-                        <custom:Chip Text="Inne" Margin="5,0,0,0" />
+        <StackLayout Spacing="0">
+            <material:MaterialCard Padding="5,5,5,0" Elevation="1" HasShadow="true" CornerRadius="0">
+                <material:MaterialCard.Padding>
+                    <OnPlatform iOS="0,25,0,0" />
+                </material:MaterialCard.Padding>
+                <StackLayout HeightRequest="110" Padding="0">
+                    <StackLayout Orientation="Horizontal" Padding="20,10,20,0">
+                        <Frame CornerRadius="20" HasShadow="false"  BorderColor="{StaticResource Key=SoftBlue}" HeightRequest="40" WidthRequest="40" Margin="0,0,5,0" Padding="0" VerticalOptions="Start" HorizontalOptions="Start" IsClippedToBounds="True">
+                            <Image Aspect="AspectFill" HeightRequest="20" Source="https://www.spyshop.pl/admin_blog/img/prestashop-avatar.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenProfilePage}" NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Frame>
+                        <custom:SearchBar HeightRequest="50" HorizontalOptions="FillAndExpand" />
+                        <ImageButton VerticalOptions="Center" Source="search" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" />
+                        <ImageButton Source="filter" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0" Clicked="OpenCloseFilter" />
                     </StackLayout>
-                </ScrollView>
-            </StackLayout>
-        </material:MaterialCard>
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,0" Padding="20,0,20,0" HorizontalOptions="Center">
+                            <custom:Chip Text="Boosting" />
+                            <custom:Chip Text="Coaching" Margin="5,0,0,0" />
+                            <custom:Chip Text="MMR Boosting" Margin="5,0,0,0" />
+                            <custom:Chip Text="Inne" Margin="5,0,0,0" />
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </material:MaterialCard>
+            <BoxView Margin="0" HeightRequest="1" Opacity="0.20">
+                <BoxView.BackgroundColor>
+                    <OnPlatform Android="#000000" iOS="Transparent" />
+                </BoxView.BackgroundColor>
+            </BoxView>
+        </StackLayout>
         <StackLayout IsVisible="False" x:Name="_filter">
             <custom:Section Title="Ilość opinii">
                 <StackLayout Padding="0,0,10,0">
-                    <material:MaterialSlider TrackColor="{StaticResource Key=MainBlue}" ThumbColor="{StaticResource Key=MainBlue}" Value="{Binding CurrentValue}" MinValue="0" MaxValue="50" Padding="-5,0,0,0"/>
+                    <material:MaterialSlider TrackColor="{StaticResource Key=MainBlue}" ThumbColor="{StaticResource Key=MainBlue}" Value="{Binding CurrentValue}" MinValue="0" MaxValue="50" Padding="-5,0,0,0" />
                 </StackLayout>
             </custom:Section>
             <custom:Section Title="Sortuj po">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <material:MaterialButton HeightRequest="40" Text="Najnowszych" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
-                    <material:MaterialButton HeightRequest="40" Text="Najlepszych" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Margin="20,0,0,0"/>
+                    <material:MaterialButton HeightRequest="40" Text="Najlepszych" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Margin="20,0,0,0" />
                 </StackLayout>
             </custom:Section>
             <StackLayout Padding="20,10,20,10">
                 <material:MaterialButton HeightRequest="40" Text="Filtruj" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
-                <material:MaterialButton HeightRequest="40" Text="Zamknij" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Clicked="OpenCloseFilter"/>
+                <material:MaterialButton HeightRequest="40" Text="Zamknij" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Clicked="OpenCloseFilter" />
             </StackLayout>
         </StackLayout>
-
-        <StackLayout  IsVisible="True" Padding="40,0,40,0" Margin="0,20,0,0" x:Name="_boosters">
-            <custom:BoosterCard ImageSource="https://st2.depositphotos.com/1814084/5304/i/950/depositphotos_53043065-stock-photo-lexi-belle.jpg"/>
+        <StackLayout IsVisible="True" Padding="40,0,40,0" Margin="0,20,0,0" x:Name="_boosters">
+            <custom:BoosterCard ImageSource="https://st2.depositphotos.com/1814084/5304/i/950/depositphotos_53043065-stock-photo-lexi-belle.jpg" />
         </StackLayout>
     </StackLayout>
 </ContentPage>

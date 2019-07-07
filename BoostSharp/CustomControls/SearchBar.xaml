@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="BoostSharp.CustomControls.SearchBar"
+    xmlns:custom="clr-namespace:BoostSharp.CustomControls">
+    <ContentView.Content>
+    <Grid HeightRequest="40" VerticalOptions="Start" HorizontalOptions="Fill">
+            <custom:SearchBarEntry Placeholder="Kogo szukasz?" TextColor="#49C1F5" PlaceholderColor="#49C1F5" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <BoxView HeightRequest="1" Color="{StaticResource Key=SoftBlue}" VerticalOptions="End" HorizontalOptions="FillAndExpand" />
+    </Grid>
+    </ContentView.Content>
+</ContentView>
