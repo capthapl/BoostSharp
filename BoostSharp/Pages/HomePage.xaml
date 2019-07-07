@@ -8,7 +8,7 @@
                 </material:MaterialCard.Padding>
                 <StackLayout HeightRequest="110" Padding="0">
                     <StackLayout Orientation="Horizontal" Padding="20,10,20,0">
-                        <Frame CornerRadius="20" HasShadow="false"  BorderColor="{StaticResource Key=SoftBlue}" HeightRequest="40" WidthRequest="40" Margin="0,0,5,0" Padding="0" VerticalOptions="Start" HorizontalOptions="Start" IsClippedToBounds="True">
+                        <Frame CornerRadius="20" HasShadow="false" BorderColor="{StaticResource Key=SoftBlue}" HeightRequest="40" WidthRequest="40" Margin="0,0,5,0" Padding="0" VerticalOptions="Start" HorizontalOptions="Start" IsClippedToBounds="True">
                             <Image Aspect="AspectFill" HeightRequest="20" Source="https://www.spyshop.pl/admin_blog/img/prestashop-avatar.png">
                                 <Image.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding OpenProfilePage}" NumberOfTapsRequired="1" />

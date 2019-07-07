@@ -40,6 +40,7 @@
                     </StackLayout>
                     <custom:Section Title="Ocena profilu: Polecany">
                         <StackLayout Padding="0,10,20,10">
+                            <custom:RatingGradient RatingInPercent="3" HeightRequest="30"/>
                             <material:MaterialButton HeightRequest="40" Text="Wystaw opinie" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
                         </StackLayout>
                     </custom:Section>

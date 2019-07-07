@@ -33,10 +33,10 @@ namespace BoostSharp.CustomControls
 
         protected override SizeRequest OnMeasure(double widthConstraint, double heightConstraint)
         {
-            double marginLeft = ((widthConstraint / 100) * RatingInPercent)-5;
+            double marginLeft = ((widthConstraint / 100) * RatingInPercent);
             if (marginLeft < 0) marginLeft = 0;
             RatingGradientViewModel.IndicatorMarginPosition = new Thickness(marginLeft, 0, 0, 0);
-
+            RatingGradientViewModel.RatingText = RatingInPercent.ToString();
             return base.OnMeasure(widthConstraint, heightConstraint);
         }
     }

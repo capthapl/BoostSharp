@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BoostSharp.CustomControls.RatingGradient" HeightRequest="20">
     <ContentView.Content>
-        <Grid HeightRequest="20" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
-            <Image Source="ratinggradient" HeightRequest="20" Aspect="AspectFill" VerticalOptions="FillAndExpand"/>
+        <Grid HeightRequest="30" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+            <Image Source="ratinggradient" HeightRequest="10" Aspect="AspectFill" VerticalOptions="Start"/>
             <BoxView Margin="{Binding IndicatorMarginPosition}" BackgroundColor="White" WidthRequest="5" HeightRequest="20" VerticalOptions="Start" HorizontalOptions="Start" />
+            <Label VerticalTextAlignment="End" TextColor="{StaticResource Key=DarkGray}" Margin="{Binding TextMarginPosition}" VerticalOptions="EndAndExpand" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=MediumFont}" Text="{Binding RatingText, StringFormat='{0}%'}"/>
         </Grid>
     </ContentView.Content>
 </ContentView>
