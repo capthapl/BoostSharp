@@ -25,7 +25,7 @@
                     </ImageButton.Margin>
                 </ImageButton>
             </Grid>
-            <ScrollView Grid.Row="1">
+            <ScrollView Grid.Row="1" Padding="0,0,0,20">
                 <StackLayout>
                     <Frame HasShadow="false" CornerRadius="58" WidthRequest="115" HeightRequest="115" VerticalOptions="Start" HorizontalOptions="Center"  Margin="0" Padding="0"  IsClippedToBounds="True">
                     <Image Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="115" HeightRequest="115" Source="https://i1.sndcdn.com/artworks-000442903056-u5d363-t500x500.jpg"/>
@@ -36,7 +36,7 @@
                         <BoxView HeightRequest="1" Margin="0,10,0,0" Color="{StaticResource Key=SectionGray}" />    
                     </StackLayout>
                     <StackLayout Padding="20,10,20,10">
-                        <material:MaterialButton HeightRequest="40" Text="Zobacz wszystkie opinie" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" />
+                        <material:MaterialButton HeightRequest="40" Text="Zobacz wszystkie opinie" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Command="{Binding ShowCommentsCommand}"/>
                     </StackLayout>
                     <custom:Section Title="Ocena profilu: Polecany">
                         <StackLayout Padding="0,10,20,10">
