@@ -192,16 +192,36 @@
     <ImageAsset Include="Assets.xcassets\backarrow.imageset\backarrow.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\boost.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\boost.imageset\boost.png" />
-    <ImageAsset Include="Assets.xcassets\facebook_logo.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\facebook_logo.imageset\facebook_logo.png" />
-    <ImageAsset Include="Assets.xcassets\email_logo.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\email_logo.imageset\email_logo.png" />
-    <ImageAsset Include="Assets.xcassets\filter.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\filter.imageset\filter.png" />
-    <ImageAsset Include="Assets.xcassets\search.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\search.imageset\search.png" />
+    <ImageAsset Include="Assets.xcassets\boost.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\boost.imageset\boost.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\facebook_logo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\facebook_logo.imageset\facebook_logo.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\email_logo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\email_logo.imageset\email_logo.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter.imageset\filter.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\search.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\search.imageset\search.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

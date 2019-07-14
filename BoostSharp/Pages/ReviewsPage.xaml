@@ -51,9 +51,9 @@
                         </ListView.ItemTemplate>
                     </ListView> 
                     <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-                        <material:MaterialButton Command="{Binding BackReviews}" WidthRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ButtonType="Text" Text="Wstecz" FontSize="{StaticResource Key=Regular}"/>
-                        <Label Text="{Binding CurrentReviewPage}" Margin="10,0,10,0" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" FontSize="{StaticResource Key=Regular}" TextColor="{StaticResource Key=BlackTextColor}" />
-                        <material:MaterialButton Command="{Binding NextReviews}" WidthRequest="100"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ButtonType="Text" Text="Dalej" FontSize="{StaticResource Key=Regular}"/>
+                      <material:MaterialButton Command="{Binding BackReviews}" WidthRequest="100"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ButtonType="Text" Text="Wstecz" FontSize="{StaticResource Key=Regular}" TextColor="{StaticResource Key=MainBlue}"/> 
+                      <Label Text="{Binding CurrentReviewPage}" Margin="10,0,10,0" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" FontSize="{StaticResource Key=Regular}" TextColor="{StaticResource Key=BlackTextColor}" />
+                      <material:MaterialButton Command="{Binding NextReviews}" WidthRequest="100"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ButtonType="Text" Text="Dalej" FontSize="{StaticResource Key=Regular}" TextColor="{StaticResource Key=MainBlue}"/> 
                     </StackLayout>
                 </StackLayout>
             </ScrollView>
