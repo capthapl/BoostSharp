@@ -6,6 +6,7 @@ using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Auth;
 using Microsoft.AppCenter;
 using BoostSharp.PageModels;
+using DLToolkit.Forms.Controls;
 
 namespace BoostSharp
 {
@@ -14,6 +15,7 @@ namespace BoostSharp
         public App()
         {
             InitializeComponent();
+            FlowListView.Init();
             var defaultPage = FreshMvvm.FreshPageModelResolver.ResolvePageModel<MainPageModel>();
             var navigationContainer = new FreshMvvm.FreshNavigationContainer(defaultPage);
             MainPage = navigationContainer;

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms" x:Class="BoostSharp.Pages.HomePage" xmlns:custom="clr-namespace:BoostSharp.CustomControls" NavigationPage.HasNavigationBar="false">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms" x:Class="BoostSharp.Pages.HomePage" xmlns:custom="clr-namespace:BoostSharp.CustomControls" NavigationPage.HasNavigationBar="false">
     <StackLayout BackgroundColor="{StaticResource Key=Void}">
         <StackLayout Spacing="0">
             <material:MaterialCard Padding="5,5,5,0" Elevation="1" HasShadow="true" CornerRadius="0">
@@ -52,8 +53,34 @@
                 <material:MaterialButton HeightRequest="40" Text="Zamknij" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}" BackgroundColor="#53CBFF" TextColor="#FFF" AllCaps="false" CornerRadius="5" Clicked="OpenCloseFilter" />
             </StackLayout>
         </StackLayout>
-        <StackLayout IsVisible="True" Padding="40,0,40,0" Margin="0,20,0,0" x:Name="_boosters">
-            <custom:BoosterCard ImageSource="https://st2.depositphotos.com/1814084/5304/i/950/depositphotos_53043065-stock-photo-lexi-belle.jpg" />
+        <flv:FlowListView BackgroundColor="{StaticResource Key=Void}" x:Name="_boosters" SeparatorVisibility="None" HasUnevenRows="true"
+            FlowItemTappedCommand="{Binding ItemTappedCommand}" FlowLastTappedItem="{Binding LastTappedItem}"
+            FlowColumnMinWidth="110" FlowItemsSource="{Binding VisibleBoosters}">
+            <flv:FlowListView.FlowColumnTemplate>
+                <DataTemplate>
+                    <Grid Padding="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Frame BackgroundColor="White" HorizontalOptions="Center" CornerRadius="5" HasShadow="false" VerticalOptions="Start" Padding="0,0,0,5" IsClippedToBounds="true">
+                            <StackLayout BackgroundColor="White" Padding="0" VerticalOptions="Start" Spacing="0" HorizontalOptions="Start" WidthRequest="120">
+                                <Image Source="{Binding ImageSource}" HeightRequest="120" Aspect="AspectFill" BackgroundColor="Gray" />
+                                <StackLayout Padding="0,5,0,2" BackgroundColor="White">
+                                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Key=DarkGray}" FontFamily="{StaticResource Key=RegularFont}" Text="{Binding Displayname}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </flv:FlowListView.FlowColumnTemplate>
+        </flv:FlowListView>
+        <StackLayout Margin="0,0,0,5" BackgroundColor="{StaticResource Key=Void}" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+          <material:MaterialButton Command="{Binding BackReviews}" WidthRequest="100"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ButtonType="Text" Text="Wstecz" FontSize="{StaticResource Key=Regular}" TextColor="{StaticResource Key=MainBlue}"/> 
+          <Label Text="{Binding CurrentReviewPage}" Margin="10,0,10,0" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" FontSize="{StaticResource Key=Regular}" TextColor="{StaticResource Key=BlackTextColor}" />
+          <material:MaterialButton Command="{Binding NextReviews}" WidthRequest="100"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ButtonType="Text" Text="Dalej" FontSize="{StaticResource Key=Regular}" TextColor="{StaticResource Key=MainBlue}"/> 
         </StackLayout>
     </StackLayout>
 </ContentPage>
