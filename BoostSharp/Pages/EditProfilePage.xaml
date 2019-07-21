@@ -26,7 +26,12 @@
                     <StackLayout>
                         <Label Text="Zmień zdjęcie" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" HorizontalOptions="Center" TextColor="#545454"></Label>
                     </StackLayout>
-                    <custom:Section Title="Dane podstawowe"></custom:Section>
+                    <custom:Section Title="Dane podstawowe">
+                        <StackLayout Padding="10,0,0,0" HorizontalOptions="FillAndExpand" Spacing="0" >
+                            <Label Margin="0" Text="Pseudonim" FontSize="{StaticResource Key=Small}" FontFamily="{StaticResource Key=RegularFont}"></Label>
+                            <Entry Margin="-5,0,0,0" Text="Rekurencja" FontSize="{StaticResource Key=Regular}" FontFamily="{StaticResource Key=RegularFont}" TextColor="{StaticResource Key=BlackTextColor}" />
+                        </StackLayout>
+                    </custom:Section>
                     <custom:Section Title="Usługi">
                         <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="10,0,20,0">
                             <Image Source="boost" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"></Image>

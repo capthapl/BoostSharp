@@ -9,7 +9,7 @@
                 </material:MaterialCard.Padding>
                 <StackLayout HeightRequest="110" Padding="0">
                     <StackLayout Orientation="Horizontal" Padding="20,10,20,0">
-                        <Frame CornerRadius="20" HasShadow="false" BorderColor="{StaticResource Key=SoftBlue}" HeightRequest="40" WidthRequest="40" Margin="0,0,5,0" Padding="0" VerticalOptions="Start" HorizontalOptions="Start" IsClippedToBounds="True">
+                        <Frame CornerRadius="20" HasShadow="false" BorderColor="{StaticResource Key=SoftBlue}" HeightRequest="40" WidthRequest="40" Margin="0,0,5,0" Padding="0" VerticalOptions="Start" HorizontalOptions="Start">
                             <Image Aspect="AspectFill" HeightRequest="20" Source="https://www.spyshop.pl/admin_blog/img/prestashop-avatar.png">
                                 <Image.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding OpenProfilePage}" NumberOfTapsRequired="1" />
@@ -20,7 +20,7 @@
                         <ImageButton VerticalOptions="Center" Source="search" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" />
                         <ImageButton Source="filter" BackgroundColor="Transparent" WidthRequest="25" HeightRequest="25" Margin="10,0,0,0" Clicked="OpenCloseFilter" />
                     </StackLayout>
-                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,0,0,5">
                         <StackLayout Orientation="Horizontal" Margin="0,0,0,0" Padding="20,0,20,0" HorizontalOptions="Center">
                             <custom:Chip Text="Boosting" />
                             <custom:Chip Text="Coaching" Margin="5,0,0,0" />

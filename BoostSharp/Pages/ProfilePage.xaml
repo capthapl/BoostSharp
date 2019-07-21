@@ -24,6 +24,11 @@
                         <OnPlatform Android="20" iOS="20,40,20,20"/>
                     </ImageButton.Margin>
                 </ImageButton>
+                <ImageButton Command="{Binding OpenEditProfileCommand}" BackgroundColor="Transparent"  Margin="20" HorizontalOptions="End" VerticalOptions="Center" Source="pencil">
+                    <ImageButton.Margin>
+                        <OnPlatform Android="20" iOS="20,40,20,20"/>
+                    </ImageButton.Margin>
+                </ImageButton>
             </Grid>
             <ScrollView Grid.Row="1" Padding="0,0,0,20">
                 <StackLayout>

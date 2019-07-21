@@ -9,6 +9,7 @@ namespace BoostSharp.PageModels
     {
         public ICommand PopCommand { get; set; }
         public ICommand ShowCommentsCommand { get; set; }
+        public ICommand OpenEditProfileCommand { get; set; }
         public ProfilePageModel()
         {
             PopCommand = new Command(async () =>
@@ -19,6 +20,10 @@ namespace BoostSharp.PageModels
             ShowCommentsCommand = new Command(async () =>
             {
                 await CoreMethods.PushPageModel<ReviewsPageModel>();
+            });
+            OpenEditProfileCommand = new Command(async () =>
+            {
+                await CoreMethods.PushPageModel<EditProfilePageModel>();
             });
         }
     }
